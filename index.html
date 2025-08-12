@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Niazi - Software Engineer</title>
+    <meta name="description"
+        content="Sahil Niazi - Passionate Software Engineer specializing in Java, Spring Boot, React, and more.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "3DDXlmpTK1SAiiZ-c",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sahil Niazi</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="profile-image">
+                        <!-- Note: profile.jpg should be placed in assets folder -->
+                        <img src="https://i.postimg.cc/TwkS7KzN/IMG-6998-1.jpg" alt="Sahil Niazi Profile Photo"
+                            class="profile-photo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <h1 class="hero-name">Hey, I am Sahil Niazi</h1>
+                    <h2 class="hero-title">I am a Software Engineer</h2>
+                    <p class="hero-tagline">Passionate about creating innovative solutions through clean code and modern
+                        technologies. Always eager to learn and tackle new challenges in software development.</p>
+                    <div class="availability-status">
+                        <span class="status-indicator"></span>
+                        Available for new opportunities
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#portfolio" class="btn btn-outline">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate software engineering student with a deep love for programming and computer
+                        hardware. My journey in technology began with curiosity about how things work, leading me to
+                        explore various programming languages including Java, Python, and C.</p>
+                    <p>I enjoy solving complex problems through code and am constantly learning new technologies to stay
+                        current with industry trends. My interests extend beyond software to hardware engineering,
+                        giving me a unique perspective on full-stack development from silicon to software.</p>
+                    <div class="download-resume">
+                        <a href="https://1drv.ms/f/c/1c2e7afd37d6d396/En58YXr93J9Epubk3_B-9skBgA4nQOp5cLVErphhycD8ww?e=V5TF5L" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h3>Education</h3>
+                            <div class="education-entries">
+                                <div class="education-entry">
+                                    <h4>B.Tech in Computer Science & Engineering</h4>
+                                    <p>Dev Bhoomi Uttarakhand University</p>
+                                    <span class="graduation-year">Class of 2026</span>
+                                </div>
+                                <div class="education-entry">
+                                    <h4>Intermediate in Science with Computer Science</h4>
+                                    <p>Police Modern School</p>
+                                    <span class="graduation-year">Completed in 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-categories">
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Java</h4>
+                                <p>Object-Oriented Programming Language</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>PHP</h4>
+                                <p>Backend Language</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>SpringBoot</h4>
+                                <p>Java Framework</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Node.js</h4>
+                                <p>Backend Runtime</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="category-title">Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>React</h4>
+                                <p>JavaScript Library for UI</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>JavaScript</h4>
+                                <p>Programming Language</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="category-title">Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>CI/CD</h4>
+                                <p>Continuous Integration & Delivery</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Docker</h4>
+                                <p>Containerization</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-dharmachakra"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Kubernetes</h4>
+                                <p>Container Orchestration</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Heroku</h4>
+                                <p>Cloud Platform for Apps</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>GCP</h4>
+                                <p>Google Cloud Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Git & GitHub</h4>
+                                <p>Version Control & Collaboration</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>IntelliJ IDEA</h4>
+                                <p>Java IDE</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h4>Visual Studio</h4>
+                                <p>Code Editor & IDE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Here are some of my recent projects showcasing my technical skills</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-type">Computer Vision</div>
+                    <h3 class="project-title">Face Recognition Attendance System</h3>
+                    <p class="project-description">An intelligent attendance management system using computer vision to
+                        recognize faces and automatically mark attendance. Features real-time detection and database
+                        integration.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/VoidGod00/face-attendance-system" class="btn btn-outline"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-type">Web Application</div>
+                    <h3 class="project-title">Expense Tracker Application</h3>
+                    <p class="project-description">A comprehensive personal finance management tool with categorized
+                        expense tracking, budget planning, and detailed reporting with interactive charts and analytics.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/VoidGod00/expense-tracker" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-type">Backend System</div>
+                    <h3 class="project-title">E-commerce Backend</h3>
+                    <p class="project-description">Scalable e-commerce platform backend with secure authentication,
+                        product management, order processing, and comprehensive API documentation using modern Java
+                        frameworks.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Hibernate</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Swagger</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/VoidGod00/E-commerce" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-type">Microservices</div>
+                    <h3 class="project-title">Task Management Microservices</h3>
+                    <p class="project-description">Distributed task management system built with microservices
+                        architecture featuring service discovery, load balancing, and centralized configuration
+                        management.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Spring Cloud</span>
+                        <span class="tech-tag">Eureka</span>
+                        <span class="tech-tag">Feign</span>
+                        <span class="tech-tag">Config Server</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/VoidGod00/task-management-app" class="btn btn-outline"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-type">Web Scraping Tool</div>
+                    <h3 class="project-title">Web Crawler</h3>
+                    <p class="project-description">A web scraping tool built in Java for automated data extraction and
+                        parsing from websites with multi-threading support for efficient concurrent processing.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Multi-threading</span>
+                        <span class="tech-tag">Web Scraping</span>
+                        <span class="tech-tag">Data Parsing</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/VoidGod00/Web-Crawler" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Let's discuss opportunities and collaborate on innovative projects</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" onclick="sendmail()">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:sniyazi102938@outlook.com">sniyazi102938@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919760445584">+91 9760445584</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/sahil-niazi-13b49a189/"
+                                target="_blank">linkedin.com/in/sahil-niazi-13b49a189/</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/VoidGod00" target="_blank">github.com/VoidGod00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sahil Niazi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
