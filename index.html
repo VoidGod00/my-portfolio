@@ -1,522 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Niazi - Software Engineer</title>
-    <meta name="description"
-        content="Sahil Niazi - Passionate Software Engineer specializing in Java, Spring Boot, React, and more.">
-
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "3DDXlmpTK1SAiiZ-c",
-            });
-        })();
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Niazi — Backend Developer</title>
+<meta name="description" content="Sahil Niazi — Backend Developer specializing in Java, Spring Boot & Cloud-Native Applications.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Sahil Niazi</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+
+<!-- Floating Nav -->
+<nav class="floatnav" id="floatnav">
+  <div class="floatnav-inner">
+    <a href="#home" class="fnav-link active" data-section="home" title="Home"><i class="fas fa-house"></i></a>
+    <a href="#about" class="fnav-link" data-section="about" title="About"><i class="fas fa-folder-open"></i></a>
+    <a href="#skills" class="fnav-link" data-section="skills" title="Skills"><i class="fas fa-briefcase"></i></a>
+    <a href="#portfolio" class="fnav-link" data-section="portfolio" title="Portfolio"><i class="fas fa-wrench"></i></a>
+    <a href="#contact" class="fnav-link" data-section="contact" title="Contact"><i class="fas fa-pen-to-square"></i></a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="home" class="hero">
+  <div class="hero-wrap">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-img-wrap">
+        <img src="https://i.postimg.cc/TwkS7KzN/IMG-6998-1.jpg" alt="Sahil Niazi" class="profile-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="profile-fallback"><i class="fas fa-user"></i></div>
+        <div class="deco-ring"></div>
+      </div>
+      <h2 class="profile-name">Sahil Niazi</h2>
+      <div class="profile-badge"><i class="fas fa-fire"></i></div>
+      <p class="profile-bio">A Backend Developer building scalable, cloud-native applications with Java & Spring Boot.</p>
+      <div class="profile-socials">
+        <a href="https://github.com/VoidGod00" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sahil-niazi-13b49a189/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sniyazi102938@outlook.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919760445584"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="hero-title-bright">BACKEND</span><br>
+        <span class="hero-title-dim">DEVELOPER</span>
+      </h1>
+      <p class="hero-desc">Results-driven backend developer building scalable, cloud-native applications using Java 21 and Spring Boot. Proficient in distributed systems, RESTful API design, and containerization.</p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">PRODUCTION<br>PROJECTS</span>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <div class="profile-image">
-                        <!-- Note: profile.jpg should be placed in assets folder -->
-                        <img src="https://i.postimg.cc/TwkS7KzN/IMG-6998-1.jpg" alt="Sahil Niazi Profile Photo"
-                            class="profile-photo"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="profile-placeholder" style="display: none;">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <h1 class="hero-name">Hey, I am Sahil Niazi</h1>
-                    <h2 class="hero-title">I am a Software Engineer</h2>
-                    <p class="hero-tagline">Passionate about creating innovative solutions through clean code and modern
-                        technologies. Always eager to learn and tackle new challenges in software development.</p>
-                    <div class="availability-status">
-                        <span class="status-indicator"></span>
-                        Available for new opportunities
-                    </div>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#portfolio" class="btn btn-outline">View My Work</a>
-                    </div>
-                </div>
-            </div>
+        <div class="stat">
+          <span class="stat-num">95%</span>
+          <span class="stat-label">TEST<br>COVERAGE</span>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+        <div class="stat">
+          <span class="stat-num">Java</span>
+          <span class="stat-label">PRIMARY<br>LANGUAGE</span>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a passionate software engineering student with a deep love for programming and computer
-                        hardware. My journey in technology began with curiosity about how things work, leading me to
-                        explore various programming languages including Java, Python, and C.</p>
-                    <p>I enjoy solving complex problems through code and am constantly learning new technologies to stay
-                        current with industry trends. My interests extend beyond software to hardware engineering,
-                        giving me a unique perspective on full-stack development from silicon to software.</p>
-                    <div class="download-resume">
-                        <a href="https://1drv.ms/f/c/1c2e7afd37d6d396/En58YXr93J9Epubk3_B-9skBgA4nQOp5cLVErphhycD8ww?e=V5TF5L" class="btn btn-primary" download>
-                            <i class="fas fa-download"></i>
-                            Download Resume
-                        </a>
-                    </div>
-                </div>
-                <div class="about-education">
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-info">
-                            <h3>Education</h3>
-                            <div class="education-entries">
-                                <div class="education-entry">
-                                    <h4>B.Tech in Computer Science & Engineering</h4>
-                                    <p>Dev Bhoomi Uttarakhand University</p>
-                                    <span class="graduation-year">Class of 2026</span>
-                                </div>
-                                <div class="education-entry">
-                                    <h4>Intermediate in Science with Computer Science</h4>
-                                    <p>Police Modern School</p>
-                                    <span class="graduation-year">Completed in 2022</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="hero-cards">
+        <div class="hero-card hero-card-orange">
+          <i class="fas fa-layer-group"></i>
+          <span>SPRING BOOT,<br>MICROSERVICES</span>
+          <div class="hero-card-arrow"><i class="fas fa-arrow-right"></i></div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-categories">
-                <!-- Backend Skills -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3 class="category-title">Backend</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Java</h4>
-                                <p>Object-Oriented Programming Language</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-php"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>PHP</h4>
-                                <p>Backend Language</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>SpringBoot</h4>
-                                <p>Java Framework</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Node.js</h4>
-                                <p>Backend Runtime</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frontend Skills -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3 class="category-title">Frontend</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>React</h4>
-                                <p>JavaScript Library for UI</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>JavaScript</h4>
-                                <p>Programming Language</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud & DevOps Skills -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3 class="category-title">Cloud & DevOps</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-sync-alt"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>CI/CD</h4>
-                                <p>Continuous Integration & Delivery</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Docker</h4>
-                                <p>Containerization</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-dharmachakra"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Kubernetes</h4>
-                                <p>Container Orchestration</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Heroku</h4>
-                                <p>Cloud Platform for Apps</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-google"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>GCP</h4>
-                                <p>Google Cloud Platform</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3 class="category-title">Tools</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Git & GitHub</h4>
-                                <p>Version Control & Collaboration</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>IntelliJ IDEA</h4>
-                                <p>Java IDE</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="skill-content">
-                                <h4>Visual Studio</h4>
-                                <p>Code Editor & IDE</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-card hero-card-green">
+          <i class="fas fa-cloud"></i>
+          <span>DOCKER, AZURE,<br>CI/CD PIPELINES</span>
+          <div class="hero-card-arrow"><i class="fas fa-arrow-right"></i></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><i class="fas fa-chevron-down"></i></div>
+</section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Here are some of my recent projects showcasing my technical skills</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="project-card">
-                    <div class="project-type">Computer Vision</div>
-                    <h3 class="project-title">Face Recognition Attendance System</h3>
-                    <p class="project-description">An intelligent attendance management system using computer vision to
-                        recognize faces and automatically mark attendance. Features real-time detection and database
-                        integration.</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">SQLite</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/VoidGod00/face-attendance-system" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-type">Web Application</div>
-                    <h3 class="project-title">Expense Tracker Application</h3>
-                    <p class="project-description">A comprehensive personal finance management tool with categorized
-                        expense tracking, budget planning, and detailed reporting with interactive charts and analytics.
-                    </p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">REST API</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/VoidGod00/expense-tracker" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-type">Backend System</div>
-                    <h3 class="project-title">E-commerce Backend</h3>
-                    <p class="project-description">Scalable e-commerce platform backend with secure authentication,
-                        product management, order processing, and comprehensive API documentation using modern Java
-                        frameworks.</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">Hibernate</span>
-                        <span class="tech-tag">JWT</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Swagger</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/VoidGod00/E-commerce" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-type">Microservices</div>
-                    <h3 class="project-title">Task Management Microservices</h3>
-                    <p class="project-description">Distributed task management system built with microservices
-                        architecture featuring service discovery, load balancing, and centralized configuration
-                        management.</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Spring Cloud</span>
-                        <span class="tech-tag">Eureka</span>
-                        <span class="tech-tag">Feign</span>
-                        <span class="tech-tag">Config Server</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/VoidGod00/task-management-app" class="btn btn-outline"
-                            target="_blank">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-type">Web Scraping Tool</div>
-                    <h3 class="project-title">Web Crawler</h3>
-                    <p class="project-description">A web scraping tool built in Java for automated data extraction and
-                        parsing from websites with multi-threading support for efficient concurrent processing.</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Multi-threading</span>
-                        <span class="tech-tag">Web Scraping</span>
-                        <span class="tech-tag">Data Parsing</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/VoidGod00/Web-Crawler" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about" class="section about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">WHO I AM</div>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text-col">
+        <p>I'm a passionate backend developer with a deep love for building robust, efficient systems. My expertise lies in Java 21 and Spring Boot, where I design cloud-native APIs, implement TDD practices, and architect distributed systems that scale.</p>
+        <p>Currently completing my B.Tech in Computer Science at Dev Bhoomi Uttarakhand University (2026), I've shipped real-world projects that achieve 95%+ test coverage and sub-10ms latency — and I'm always pushing to learn more.</p>
+        <div class="about-actions">
+          <a href="https://1drv.ms/f/c/1c2e7afd37d6d396/En58YXr93J9Epubk3_B-9skBgA4nQOp5cLVErphhycD8ww?e=V5TF5L" class="btn-primary" target="_blank">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn-outline">Let's Talk</a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-line"></div>
-                <p class="section-description">Let's discuss opportunities and collaborate on innovative projects</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full" onclick="sendmail()">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:sniyazi102938@outlook.com">sniyazi102938@outlook.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <a href="tel:+919760445584">+91 9760445584</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/sahil-niazi-13b49a189/"
-                                target="_blank">linkedin.com/in/sahil-niazi-13b49a189/</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/VoidGod00" target="_blank">github.com/VoidGod00</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="about-cards-col">
+        <div class="about-info-card">
+          <div class="aic-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="aic-title">B.Tech — Computer Science</div>
+            <div class="aic-sub">Dev Bhoomi Uttarakhand University · 2026</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Sahil Niazi. All rights reserved.</p>
+        <div class="about-info-card">
+          <div class="aic-icon"><i class="fas fa-school"></i></div>
+          <div>
+            <div class="aic-title">Intermediate (PCM)</div>
+            <div class="aic-sub">Police Modern School, Bareilly · 2022</div>
+          </div>
         </div>
-    </footer>
+        <div class="about-info-card">
+          <div class="aic-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="aic-title">Dehradun, Uttarakhand</div>
+            <div class="aic-sub">Available for remote & on-site roles</div>
+          </div>
+        </div>
+        <div class="about-info-card">
+          <div class="aic-icon"><i class="fas fa-circle-check" style="color:#00b894"></i></div>
+          <div>
+            <div class="aic-title" style="color:#00b894">Open to Opportunities</div>
+            <div class="aic-sub">Actively looking — graduating June 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Scripts -->
-    <script src="app.js"></script>
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section id="skills" class="section skills">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">WHAT I USE</div>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-headline">
+      <span class="sh-bright">PREMIUM</span><br>
+      <span class="sh-dim">TOOLS & STACK</span>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8f0ff"><i class="fab fa-java" style="color:#007396"></i></div>
+        <div class="sic-info"><div class="sic-name">Java 21</div><div class="sic-desc">Primary Language · Advanced</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8ffe8"><i class="fas fa-leaf" style="color:#6db33f"></i></div>
+        <div class="sic-info"><div class="sic-name">Spring Boot</div><div class="sic-desc">Java Framework</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#fff0e8"><i class="fab fa-react" style="color:#61dafb"></i></div>
+        <div class="sic-info"><div class="sic-name">ReactJS</div><div class="sic-desc">Frontend Library</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#ffe8f0"><i class="fab fa-js" style="color:#f7df1e"></i></div>
+        <div class="sic-info"><div class="sic-name">JavaScript</div><div class="sic-desc">Frontend Language</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#f0e8ff"><i class="fas fa-shield-halved" style="color:#6c5ce7"></i></div>
+        <div class="sic-info"><div class="sic-name">Spring Security</div><div class="sic-desc">Auth & OAuth 2.0</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8f8ff"><i class="fas fa-database" style="color:#00758f"></i></div>
+        <div class="sic-info"><div class="sic-name">MySQL</div><div class="sic-desc">Relational Database</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8fff5"><i class="fas fa-database" style="color:#336791"></i></div>
+        <div class="sic-info"><div class="sic-name">PostgreSQL</div><div class="sic-desc">Relational Database</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#fff8e8"><i class="fas fa-leaf" style="color:#4db33d"></i></div>
+        <div class="sic-info"><div class="sic-name">MongoDB</div><div class="sic-desc">NoSQL Database</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#ffe8e8"><i class="fas fa-bolt" style="color:#dc382d"></i></div>
+        <div class="sic-info"><div class="sic-name">Redis</div><div class="sic-desc">Pub/Sub · Caching</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8f0ff"><i class="fab fa-docker" style="color:#2496ed"></i></div>
+        <div class="sic-info"><div class="sic-name">Docker</div><div class="sic-desc">Containerization</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8f4ff"><i class="fab fa-microsoft" style="color:#0078d4"></i></div>
+        <div class="sic-info"><div class="sic-name">Azure</div><div class="sic-desc">Cloud Platform</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#f0ffe8"><i class="fas fa-sync-alt" style="color:#00b894"></i></div>
+        <div class="sic-info"><div class="sic-name">CI/CD</div><div class="sic-desc">Pipeline Automation</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#fff0f0"><i class="fas fa-vial" style="color:#e17055"></i></div>
+        <div class="sic-info"><div class="sic-name">JUnit 5 · Mockito</div><div class="sic-desc">TDD · Testing</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#f0f0f0"><i class="fab fa-git-alt" style="color:#f05032"></i></div>
+        <div class="sic-info"><div class="sic-name">Git & GitHub</div><div class="sic-desc">Version Control</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#fff8f0"><i class="fas fa-project-diagram" style="color:#fdcb6e"></i></div>
+        <div class="sic-info"><div class="sic-name">Microservices</div><div class="sic-desc">Distributed Architecture</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#f5f5ff"><i class="fas fa-plug" style="color:#a29bfe"></i></div>
+        <div class="sic-info"><div class="sic-name">RESTful APIs</div><div class="sic-desc">API Design</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#e8fff5"><i class="fas fa-terminal" style="color:#00cec9"></i></div>
+        <div class="sic-info"><div class="sic-name">Maven</div><div class="sic-desc">Build Tool</div></div>
+      </div>
+
+      <div class="skill-item-card">
+        <div class="sic-icon" style="background:#fff0e8"><i class="fas fa-paper-plane" style="color:#e17055"></i></div>
+        <div class="sic-info"><div class="sic-name">Postman</div><div class="sic-desc">API Testing</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PORTFOLIO ═══════════════ -->
+<section id="portfolio" class="section portfolio">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">WHAT I BUILT</div>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Real-Time Chat API -->
+      <div class="project-card" data-aos>
+        <div class="pc-top">
+          <div class="pc-type">Backend System</div>
+          <div class="pc-date">Jan 2026</div>
+        </div>
+        <h3 class="pc-title">Real-Time Chat API</h3>
+        <p class="pc-desc">RESTful backend for real-time messaging using Redis Pub/Sub for instant broadcast across rooms. Modeled chat history with Redis data structures achieving sub-10ms average latency.</p>
+        <div class="pc-highlights">
+          <span class="highlight-tag">95%+ test coverage</span>
+          <span class="highlight-tag">sub-10ms latency</span>
+          <span class="highlight-tag">TDD</span>
+        </div>
+        <div class="pc-tech">
+          <span>Java 21</span><span>Spring Boot</span><span>Redis</span><span>Docker</span><span>JUnit 5</span><span>Mockito</span>
+        </div>
+        <div class="pc-actions">
+          <a href="https://github.com/VoidGod00/simple-chat" target="_blank" class="pc-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Proge E-Commerce -->
+      <div class="project-card" data-aos>
+        <div class="pc-top">
+          <div class="pc-type">Full Stack Platform</div>
+          <div class="pc-date">Dec 2025</div>
+        </div>
+        <h3 class="pc-title">Proge — E-Commerce Platform</h3>
+        <p class="pc-desc">End-to-end e-commerce platform covering OAuth2 authentication, product catalog, cart, and order management. Dockerized CI/CD pipeline on Azure with role-based access control.</p>
+        <div class="pc-highlights">
+          <span class="highlight-tag">Azure deployed</span>
+          <span class="highlight-tag">OAuth2</span>
+          <span class="highlight-tag">CI/CD</span>
+        </div>
+        <div class="pc-tech">
+          <span>Spring Boot</span><span>ReactJS</span><span>PostgreSQL</span><span>OAuth2</span><span>Docker</span><span>Azure</span><span>Tailwind</span>
+        </div>
+        <div class="pc-actions">
+          <a href="https://github.com/VoidGod00/Proge" target="_blank" class="pc-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Simple Weather API -->
+      <div class="project-card" data-aos>
+        <div class="pc-top">
+          <div class="pc-type">Cloud API</div>
+          <div class="pc-date">Feb 2024</div>
+        </div>
+        <h3 class="pc-title">Simple Weather API</h3>
+        <p class="pc-desc">REST API that fetches weather by PIN code with intelligent MySQL caching to minimize redundant API calls. Reduced average response time by ~40% through cache-first lookup strategy.</p>
+        <div class="pc-highlights">
+          <span class="highlight-tag">~40% faster</span>
+          <span class="highlight-tag">Cloud-native</span>
+          <span class="highlight-tag">Render hosted</span>
+        </div>
+        <div class="pc-tech">
+          <span>Java 21</span><span>Spring Boot</span><span>MySQL</span><span>Aiven</span><span>Docker</span><span>Render</span>
+        </div>
+        <div class="pc-actions">
+          <a href="https://github.com/VoidGod00/simple-weather-api" target="_blank" class="pc-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Web Crawler -->
+      <div class="project-card" data-aos>
+        <div class="pc-top">
+          <div class="pc-type">Web Scraping Tool</div>
+          <div class="pc-date">2023</div>
+        </div>
+        <h3 class="pc-title">Web Crawler</h3>
+        <p class="pc-desc">A web scraping tool built in Java for automated data extraction and parsing from websites with multi-threading support for efficient concurrent processing of multiple pages.</p>
+        <div class="pc-highlights">
+          <span class="highlight-tag">Multi-threaded</span>
+          <span class="highlight-tag">Concurrent</span>
+          <span class="highlight-tag">Java</span>
+        </div>
+        <div class="pc-tech">
+          <span>Java</span><span>Multi-threading</span><span>Web Scraping</span><span>Data Parsing</span>
+        </div>
+        <div class="pc-actions">
+          <a href="https://github.com/VoidGod00/Web-Crawler" target="_blank" class="pc-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">GET IN TOUCH</div>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <p class="contact-intro">Let's build something great together. I'm actively seeking backend developer roles and open to exciting collaborations.</p>
+        <div class="contact-links">
+          <a href="mailto:sniyazi102938@outlook.com" class="contact-link-card">
+            <div class="clc-icon"><i class="fas fa-envelope"></i></div>
+            <div><div class="clc-label">Email</div><div class="clc-val">sniyazi102938@outlook.com</div></div>
+          </a>
+          <a href="tel:+919760445584" class="contact-link-card">
+            <div class="clc-icon"><i class="fas fa-phone"></i></div>
+            <div><div class="clc-label">Phone</div><div class="clc-val">+91 9760445584</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sahil-niazi-13b49a189/" target="_blank" class="contact-link-card">
+            <div class="clc-icon"><i class="fab fa-linkedin"></i></div>
+            <div><div class="clc-label">LinkedIn</div><div class="clc-val">sahil-niazi-13b49a189</div></div>
+          </a>
+          <a href="https://github.com/VoidGod00" target="_blank" class="contact-link-card">
+            <div class="clc-icon"><i class="fab fa-github"></i></div>
+            <div><div class="clc-label">GitHub</div><div class="clc-val">github.com/VoidGod00</div></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-col">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-name">Sahil Niazi</span>
+      <span class="footer-copy">© 2026 · Built with passion</span>
+      <div class="footer-socials">
+        <a href="https://github.com/VoidGod00" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sahil-niazi-13b49a189/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sniyazi102938@outlook.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="app.js"></script>
 </body>
-
 </html>
