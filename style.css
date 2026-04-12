@@ -324,7 +324,6 @@ body {
 /* Hero Text */
 .hero-text {
   min-width: 0;
-  overflow: hidden;
 }
 
 .hero-desc {
@@ -941,7 +940,15 @@ body {
 
   .fnav-link { width: 32px; height: 32px; font-size: 13px; }
 
-  .hero-title { font-size: clamp(36px, 11vw, 56px); }
+  .hero-title {
+  font-family: var(--font);
+  font-size: clamp(32px, 4.5vw, 80px); /* Lowered the min size and vw */
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+  overflow-wrap: break-word; /* Allows breaking as a last resort to prevent horizontal scrolling */
+}
 
   .hero-stats { gap: 24px; flex-wrap: wrap; justify-content: center; }
 
