@@ -3,7 +3,7 @@
 A sleek, responsive, and interactive personal portfolio website designed to showcase my projects, technical skills, and experience as a Backend Developer specializing in Java, Spring Boot, and Cloud-Native Applications.
 
 ## 🚀 Live Demo
-sahilniazi.me
+https://sahilniazi.me
 
 ## ✨ Key Features
 * **Modern UI/UX:** Dark, bold design with clean typography and striking orange accents.
